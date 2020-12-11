@@ -8,10 +8,10 @@ function defaultTask(cb) {
   cb();
 }
 function jsTask(cb){
-return src([
+return src(['jquery-3.5.1.min.js','src/js/bootstrap.bundle.min.js',
 	'src/js/function.js', 
 	])
-	.pipe(concat('app.js'))
+	.pipe(concat('apps.js'))
 	.pipe(dest('dist/js'));
 	cb();
 }
